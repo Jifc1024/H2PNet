@@ -1,6 +1,6 @@
 # Hyperbolic Hierarchy-Aware Prototype Network for On-Orbit Earth Surface Anomaly Detection From Single-Satellite Imagery
 
-A lightweight, single-temporal Earth Surface Anomaly (ESA) detection framework based on hyperbolic prototype learning. This repository implements H2PNet and demonstrates its application to the July 2025 Beijing Miyun flood event.
+A lightweight, single-temporal Earth Surface Anomaly (ESA) detection framework based on hyperbolic prototype learning. This repository implements H2PNet and demonstrates its application to the March 2018 Sudan Sandstorm event.
 
 ## Overview
 
@@ -20,9 +20,9 @@ H2PNet is designed for on-orbit ESA detection from a single remote sensing image
 | `inference.py` | Sliding-window inference and anomaly-score / uncertainty map visualization |
 | `config.py` | Centralized hyperparameter configuration |
 
-## Application Case: Beijing Miyun Flood  (July 2025)
+## Application Case: Sudan Sandstorm event  (March 2018)
 
-This repository instantiates H2PNet for the July 2025 Beijing Miyun flood event. The historical steady-state prior is constructed from cloud-free images, and the resulting prototype set is used to detect flood-inundated pixels on a single post-event image — with no temporally-registered reference image required at inference.
+This repository instantiates H2PNet for the March 2018 Sudan sandstorm event. The historical steady-state prior is constructed from cloud-free images, and the resulting prototype set is used to detect flood-inundated pixels on a single post-event image — with no temporally-registered reference image required at inference.
 
 ## Requirements
 
