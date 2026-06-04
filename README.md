@@ -42,7 +42,7 @@ Place the following files in the `trainSample/` directory:
 
 - `trainData.npy` — training patches, shape: `[N, W, H, C]`
 - `label.npy` — training labels, shape: `[N, W, H, num_classes]` (one-hot)
-- `final.npy` — full-scene image for inference, shape: `[H, W, C]`
+- `final.npy` — full-scene image for inference, shape: `[H, W, C]`, which can be found: https://www.kaggle.com/datasets/fengchengji/beijing-miyun
 
 Place the annotation results in the `testLabel/` directory:
 
@@ -90,8 +90,8 @@ BIN_THRESH  = 0.6   # Binarization threshold
 ```
 The defaults here are tuned for the Miyun-flood instantiation. The settings reported in the paper for the full ESAD benchmark are: patch size 5×5, batch size 128, learning rate 1e-4 (Adam), curvature c = 0.5, distance threshold Δ = 0.5, contrastive coefficient β = 0.1, prototypes updated every 10 iterations with momentum α = 0.9. Adjust as needed for other ESA scenarios.
 
-## Author
-
+## Citation
+If you find this work useful, please cite:
 @article{ji2025h2pnet,
   title   = {Hyperbolic Hierarchy-aware Prototype Network for On-orbit Earth
              Surface Anomaly Detection from Single-satellite Imagery},
