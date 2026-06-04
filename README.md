@@ -42,7 +42,7 @@ Place the following files in the `trainSample/` directory:
 
 - `trainData.npy` — training patches, shape: `[N, W, H, C]`
 - `label.npy` — training labels, shape: `[N, W, H, num_classes]` (one-hot)
-- `final.npy` — full-scene image for inference, shape: `[H, W, C]`, which can be found: https://www.kaggle.com/datasets/fengchengji/beijing-miyun
+- `final.npy` — full-scene image for inference, shape: `[H, W, C]`, which can be found: https://www.kaggle.com/datasets/fengchengji/sandstorm
 
 Place the annotation results in the `testLabel/` directory:
 
